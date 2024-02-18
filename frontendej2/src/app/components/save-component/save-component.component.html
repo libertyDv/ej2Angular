@@ -1,0 +1,15 @@
+<!-- agregar-cliente.component.html -->
+
+<form (ngSubmit)="guardarCliente()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="cliente.nombre" name="nombre">
+    
+    <label for="apellidoUno">Apellido 1:</label>
+    <input type="text" id="apellido" [(ngModel)]="cliente.apellidoUno" name="apellido">
+
+    <label for="apellidoDos">Apellido 2:</label>
+    <input type="text" id="apellido" [(ngModel)]="cliente.apellidoDos" name="apellido">
+    
+    <button type="submit">Guardar</button>
+  </form>
+  
